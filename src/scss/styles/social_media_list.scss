@@ -1,0 +1,44 @@
+.links-list {
+    list-style-type: none;
+
+    & > li {
+        display: inline-block;
+        margin-left: 1rem;
+
+        & a {
+            text-decoration: none;
+        }
+
+        &::before {            
+            background-size: 1rem;
+            display: inline-block;
+            width: 1rem; 
+            height: 1rem;
+            content:"";
+        }
+
+        &.mail::before {
+            margin-right: 0.5rem;
+            background-image: url("../../dist/assets/media/email.png");
+
+        }
+        &.fb::before {
+            margin-right: 0.5rem;
+            background-image: url("../../dist/assets/media/fb.png");
+        }
+        &.twitter::before {
+            margin-right: 0.5rem;
+            background-image: url("../../dist/assets/media/twitter.png");
+        }
+    }
+}
+
+@media screen and (max-width: $sm-breakpoint) {
+
+    .links-list {
+        & > li {
+            display: block;
+        }
+    }
+
+}

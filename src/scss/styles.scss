@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #212121;
+    font-family: "Klavika";
+    color: white;
+}
+
+@import "./styles/breakpoints.scss";
+@import "./styles/fonts.scss";
+@import "./styles/slider.scss";
+@import "./styles/containers.scss";
+@import "./styles/social_media_list.scss";
+@import "./styles/utils.scss";
+@import "./styles/logo.scss";
+@import "./styles/intro.scss";
+
